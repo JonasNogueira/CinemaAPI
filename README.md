@@ -33,7 +33,7 @@ Make sure you have the following installed on your machine:
 
 4. Open your web browser and go to http://localhost:8000 to view the Swagger UI for API documentation.
    
-
+## 
 ## API Endpoints
   - /api/movie/: CRUD operations for movies.
   - /api/theater/: CRUD operations for theaters.
