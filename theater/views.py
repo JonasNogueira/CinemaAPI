@@ -2,6 +2,7 @@ from django.shortcuts import render
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from .serializers import TheaterSerializer
 from .models import Theater
+from rest_framework.response import Response
 
 
 class TheatersList(ListCreateAPIView):
