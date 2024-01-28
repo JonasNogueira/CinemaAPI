@@ -1,37 +1,10 @@
-from django.test import TestCase, Client
-from django.urls import reverse
-from model_mommy import mommy
+from django.test import TestCase
+
 from session.models import Session
-from session.serializers import SessionSerializer, SessionDetailSerializer
-from session.views import SessionListCreateView
+from session.serializers import SessionDetailSerializer
+
 from movie.models import Movie
 from theater.models import Theater
-
-
-"""class SessionListCreateViewTest(TestCase):
-    def setUp(self):
-        self.client = Client()
-
-    def test_get_serializer_class_get_request(self):
-        view = SessionListCreateView()
-
-        # Configurar uma solicitação GET simulada
-        view.request = self.client.get("/sessions/")
-
-        # Verificar se o serializer_class é SessionDetailSerializer para solicitações GET
-        self.assertEqual(view.get_serializer_class(), SessionDetailSerializer)
-
-    def test_get_serializer_class_post_request(self):
-        view = SessionListCreateView()
-
-        # Configurar uma solicitação POST simulada
-        view.request = self.client.post(
-            "/sessions/",
-            {"movie": 1, "theater": 1, "start_time": "2024-01-27 18:00:00"},
-        )
-
-        # Verificar se o serializer_class é SessionSerializer para solicitações POST
-        self.assertEqual(view.get_serializer_class(), SessionSerializer)"""
 
 
 class SessionListCreateViewTest(TestCase):

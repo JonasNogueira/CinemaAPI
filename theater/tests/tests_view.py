@@ -1,5 +1,5 @@
 from django.test import TestCase
-from django.urls import reverse
+
 from theater.models import Theater
 from theater.serializers import TheaterSerializer
 
