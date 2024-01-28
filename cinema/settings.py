@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "movie",
     "theater",
     "session",
+    "drf_yasg",
 ]
 
 MIDDLEWARE = [
