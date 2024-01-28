@@ -23,7 +23,6 @@ Make sure you have the following installed on your machine:
    ```
    git clone https://github.com/JonasNogueira/CinemaAPI.git
 
-
 2. Build and run the Docker containers:
     ``` 
         docker-compose up --build
@@ -31,8 +30,6 @@ Make sure you have the following installed on your machine:
 3. Apply migrations:
     ```
         docker-compose exec web python manage.py migrate
-
-
 
 4. Open your web browser and go to http://localhost:8000 to view the Swagger UI for API documentation.
 
