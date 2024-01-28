@@ -32,4 +32,11 @@ Make sure you have the following installed on your machine:
         docker-compose exec web python manage.py migrate
 
 4. Open your web browser and go to http://localhost:8000 to view the Swagger UI for API documentation.
+   
+
+## API Endpoints
+   /api/movie/: CRUD operations for movies.
+   /api/theater/: CRUD operations for theaters.
+   /api/session/: CRUD operations for sessions.
+
 
