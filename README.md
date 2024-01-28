@@ -35,8 +35,8 @@ Make sure you have the following installed on your machine:
    
 
 ## API Endpoints
-   /api/movie/: CRUD operations for movies.
-   /api/theater/: CRUD operations for theaters.
-   /api/session/: CRUD operations for sessions.
+  - /api/movie/: CRUD operations for movies.
+  - /api/theater/: CRUD operations for theaters.
+  - /api/session/: CRUD operations for sessions.
 
 
