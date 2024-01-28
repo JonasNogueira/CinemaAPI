@@ -8,9 +8,6 @@ class MovieSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
     def validate(self, data):
-        """
-        Verifica se já existe um filme com as mesmas informações.
-        """
         existing_movie = Movie.objects.filter(
             name=data["name"], director=data["director"], duration=data["duration"]
         )

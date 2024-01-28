@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -80,11 +81,11 @@ WSGI_APPLICATION = "cinema.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "movie_db",
-        "USER": "root",
-        "PASSWORD": "root",
-        "HOST": "localhost",
-        "PORT": "3306",
+        "NAME": os.getenv("DJANGO_DB_NAME", "movie_db"),
+        "USER": os.getenv("DJANGO_DB_USER", "root"),
+        "PASSWORD": os.getenv("DJANGO_DB_PASSWORD", "root"),
+        "HOST": os.getenv("DJANGO_DB_HOST", "localhost"),
+        "PORT": os.getenv("DJANGO_DB_PORT", "3306"),
     }
 }
 
